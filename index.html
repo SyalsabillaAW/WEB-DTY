@@ -1,13 +1,399 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Satu</title>
-    <link rel="stylesheet" href="style.css">
+    <title>JD Sport</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+        }
+
+        .cont1 {
+            background-color: rgba(255, 255, 255, 255);
+            width: 100%;
+            height: 50px;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            gap: 20px;
+            padding: 0 10px;
+        }
+
+        .favimg {
+            width: 20px;
+            height: 20px;
+        }
+
+        .cont2 {
+            background-color: rgba(255, 255, 255, 255);
+            width: 100%;
+            height: 100px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        .logo {
+            width: 100px;
+            height: 30px;
+            position: relative;
+
+        }
+
+        .kotakpl {
+            background-color: rgba(240, 240, 240, 255);
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px 20px;
+            width: 40%;
+            text-align: left;
+        }
+
+        .cont3 {
+            background-color: #ffffff;
+            width: 100%;
+            height: 50px;
+            display: flex;
+            padding-left: 50px;
+            gap: 30px;
+            position: fixed;
+            z-index: 999;
+        }
+
+        .cont3 a {
+            color: #014b8c;
+            text-decoration: none;
+            font-weight: bold;
+
+        }
+
+        .cont4 {
+            background-color: rgba(255, 255, 255, 255);
+            width: 100%;
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .border {
+            border: 2px solid #014b8c;
+            padding: 10px 20px;
+            background-color: transparent;
+            color: #014b8c;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+
+        .cont5 img {
+            width: 100%;
+            height: auto;
+        }
+
+        .cont6 {
+            background-color: #f5f6f8;
+            width: 100%;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px 0;
+        }
+
+        .cont7 {
+            display: flex;
+            gap: 20px;
+        }
+
+        .cont7 img {
+            width: 300px;
+            height: auto;
+        }
+
+
+        .cont9 img {
+            width: 100%;
+            height: auto;
+        }
+
+        .cont10 {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px 0;
+        }
+
+        .cont10 img {
+            width: 400px;
+            height: auto;
+        }
+
+        .cont11 {
+            background-color: rgba(255, 255, 255, 255);
+            width: 100%;
+            padding: 20px;
+        }
+
+        .cont13 {
+            display: flex;
+            gap: 20px;
+        }
+
+        .cont13 div {
+            width: 23%;
+        }
+
+        .cont13 img {
+            width: 100%;
+            height: auto;
+        }
+
+        .cont14 {
+            background-color: #014b8c;
+            color: white;
+            width: 100%;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .cont14 a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .cont14 img {
+            width: 40px;
+            height: 40px;
+        }
+
+        .cont15 {
+            background-color: rgba(255, 255, 255, 255);
+            width: 100%;
+            padding: 20px;
+        }
+
+        .cont15 a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .cont16 {
+            background-color: rgba(255, 255, 255, 255);
+            width: 100%;
+            padding: 20px;
+        }
+
+        .cont16b {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px 0;
+        }
+
+        .div1 {
+            width: 40%;
+        }
+
+        .div2 {
+            width: 50%;
+        }
+
+        footer {
+            background-color: #014b8c;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+
+        @media (max-width: 768px) {
+
+            .cont2,
+            .cont3,
+            .cont4,
+            .cont6,
+            .cont7,
+            .cont10,
+            .cont13,
+            .cont16b {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .cont13 div {
+                width: 100%;
+            }
+
+            .div1,
+            .div2 {
+                width: 100%;
+            }
+
+
+        }
+
+        .bckgcolor {
+            background-color: #f5f6f8;
+            height: 170px;
+        }
+    </style>
 </head>
+
 <body>
-    <h1>Halo gais Welcome To WEB 1</h1>
-    <p>INI SYALSABILLA</p>
+
+    <div class="cont3">
+        <img src="indorama2.png" alt="" class="logo">
+        <img src="" alt="">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Team</a>
+        <a href="#">Contact</a>
+        <a href="#">Services</a>
+    </div>
+    <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="dty.jpeg" class="d-block w-100" alt="..." style="width: 100%; height: 600px;">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1 class="display-5" style="">Welcome to DTY Indorama</h1>
+                    <p class="lead">Leading the way in textile innovation</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="benangdty.jpeg" class="d-block w-100" alt="..." style="width: 100%; height: 600px;">
+                <div class="carousel-caption d-none d-md-block">
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="benangdty2.jpeg" class="d-block w-100" alt="..." style="width: 100%; height: 600px;">
+                <div class="carousel-caption d-none d-md-block">
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <div class="container section-title">
+        <h2 style="color: #014b8c; font-weight: 700; text-align: center; padding-top: 40px;">Company Profile</h2>
+    </div>
+    <div class="container" style="padding-top: 10px;">
+        <div>
+            <p style="text-align: center;">
+                Perusahaan yang bergerak di bidang produksi benang ini didirikan pada tahun 2013.
+                DTY (Drawn Textured Yarn) adalah jenis benang yang banyak digunakan, terutama untuk membuat kain rajut,
+                kain tenun, dan berbagai produk pakaian jadi.
+                DTY dibuat melalui proses pemintalan dan teksturisasi dari serat poliester, yang memberikan sifat
+                elastis dan lembut pada benang.
+            </p>
+        </div>
+    </div>
+    <div class="bckgcolor">
+        <div class="container section-title ">
+            <h2 style="color: #014b8c; font-weight: 700; text-align: center; padding-top: 20px;">Product Profile</h2>
+        </div>
+        <div class="container" style="padding-top: 10px;">
+            <div>
+                <p style="text-align: center;">
+                    Drawn Textured Yarn (DTY) adalah benang berkualitas tinggi yang dihasilkan dari serat poliester
+                    melalui proses pemintalan dan teksturisasi.
+                    DTY menawarkan elastisitas dan kelembutan yang ideal untuk berbagai aplikasi tekstil, termasuk kain
+                    rajut, kain tenun, dan pakaian jadi.
+                    Benang ini memiliki daya serap kelembapan yang baik dan ketahanan terhadap kusut, yang memudahkan
+                    perawatan dan meningkatkan kenyamanan.
+                    DTY juga tersedia dalam berbagai pilihan warna dan memiliki kekuatan material yang tinggi.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="cont6" style="background-color: #f5f6f8; width: 100%; height: 270px;">
+        <div class="cont7">
+            <img src="dtybenang1.jpeg" alt="Category 1">
+            <img src="dtybenang2.jpeg" alt="Category 2">
+            <img src="dtybenang3.jpeg" alt="Category 3">
+
+        </div>
+    </div>
+
+    <!-- Section Title -->
+
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row">
+
+          <div class="col-lg-6 d-flex align-items-center">
+            <img src="proses produksi.png" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0 content">
+            <h2 style="color: #014b8c; font-weight: 700; padding-top: 40px; ">Production Proses</h2>
+            <p class="fst-italic" style="padding-top: 10px;">
+              1. Loading (Persiapan)
+            </p>
+            <p class="fst-italic" style="padding-top: 15px;">
+                2. Splicing (Penyambungan)
+              </p>
+              <p class="fst-italic" style="padding-top: 15px;">
+                3. Treading (Proses awal penggulungan)
+              </p>
+              <p class="fst-italic" style="padding-top: 15px;">
+                4. Dopping (Pengambilan benang)
+              </p>
+              <p class="fst-italic"style="padding-top: 15px;">
+                5. Segregasi (Pemilihan)
+              </p>
+              <p class="fst-italic" style="padding-top: 15px;">
+                6. Knitting (Rajut menjadi kain)
+              </p>
+              <p class="fst-italic" style="padding-top: 15px;">
+                7. Packing (Pengepakan)
+              </p>
+            </div>
+            </div>
+    </div>
+            
+       
+
+    <div class="bckgcolor">
+        <div class="container section-title ">
+            <h2 style="color: #014b8c; font-weight: 700; text-align: center; padding-top: 20px;">Customers</h2>
+        </div>
+        <div class="container" style="padding-top: 10px;">
+            <div>
+                <p style="text-align: center; ">
+                    Customer dari perusahaan dty ini meliputi berbagai perusahaan yang bergerak dalam produksi tekstil, khususnya yang fokus pada pembuatan produk rajut atau tenun.
+                     Perusahaan tersebut mengandalkan benang Drawn Textured Yarn (DTY) untuk menghasilkan kain berkualitas tinggi yang dibutuhkan dalam berbagai jenis produk, mulai dari pakaian sehari-hari hingga produk tekstil rumah tangga.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="cont6" style="background-color: #f5f6f8; width: 100%; height: 270px;">
+        <div class="cont7">
+            <img src="pt pan.jpeg" alt="Category 1" style="width: 200px; height: 150px;">
+            <img src="pt_wintex-removebg-preview.png" alt="Category 2" style="width: 200px; height: 150px;">
+            <img src="sritex-removebg-preview.png" alt="Category 3" style="width: 200px; height: 150px;">
+            <img src="libolon-removebg-preview.png" alt="Category 4" style="width: 200px; height: 150px;">
+
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 DTY Company.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
